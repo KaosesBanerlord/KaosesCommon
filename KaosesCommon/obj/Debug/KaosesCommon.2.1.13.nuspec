@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>KaosesCommon</id>
+    <version>2.1.13</version>
+    <title>Kaoses Common</title>
+    <authors>Patrick Scott</authors>
+    <icon>K-logo-Small-ManB2-B.png</icon>
+    <readme>ReadMe.md</readme>
+    <description>Kaoses bannerlord common code</description>
+    <copyright>Patrick Scott</copyright>
+    <repository type="GitHub" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Bannerlord.ButterLib" version="2.6.1" exclude="Runtime,Build,Native,Analyzers,BuildTransitive" />
+        <dependency id="Bannerlord.MCM" version="5.5.4" exclude="Runtime,Build,Native,Analyzers,BuildTransitive" />
+        <dependency id="Bannerlord.ReferenceAssemblies.BirthAndDeath" version="1.0.3.9055" exclude="Build,Analyzers" />
+        <dependency id="Bannerlord.ReferenceAssemblies.Core" version="1.0.3.9055" exclude="Build,Analyzers" />
+        <dependency id="Bannerlord.ReferenceAssemblies.Native" version="1.0.3.9055" exclude="Build,Analyzers" />
+        <dependency id="Bannerlord.ReferenceAssemblies.SandBox" version="1.0.3.9055" exclude="Build,Analyzers" />
+        <dependency id="Bannerlord.ReferenceAssemblies.StoryMode" version="1.0.3.9055" exclude="Build,Analyzers" />
+        <dependency id="Bannerlord.UIExtenderEx" version="2.5.5" exclude="Runtime,Build,Native,Analyzers,BuildTransitive" />
+        <dependency id="Lib.Harmony" version="2.2.2" exclude="Runtime,Build,Native,Analyzers,BuildTransitive" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework=".NETFramework4.7.2" />
+    </frameworkAssemblies>
+    <contentFiles>
+      <files include="any/net472/Kaoses_Bannerlord_logo.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="U:\BannerLord\MyMods\KaosesCommon\KaosesCommon\bin\x64\Debug\net472\KaosesCommon.dll" target="lib\net472\KaosesCommon.dll" />
+    <file src="U:\BannerLord\MyMods\KaosesCommon\KaosesCommon\Kaoses_Bannerlord_logo.ico" target="content\Kaoses_Bannerlord_logo.ico" />
+    <file src="U:\BannerLord\MyMods\KaosesCommon\KaosesCommon\Kaoses_Bannerlord_logo.ico" target="contentFiles\any\net472\Kaoses_Bannerlord_logo.ico" />
+    <file src="U:\BannerLord\MyMods\KaosesCommon\KaosesCommon\ReadMe.md" target="\ReadMe.md" />
+    <file src="U:\BannerLord\MediFiles\K-logo-Small-ManB2-B.png" target="\K-logo-Small-ManB2-B.png" />
+  </files>
+</package>

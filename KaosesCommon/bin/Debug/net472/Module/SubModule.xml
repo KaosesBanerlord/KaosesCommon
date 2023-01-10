@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <Name value="$modulename$" />
+  <Id value="$modulename$" />
+  <Version value="v$version$" />
+  <Official value="false" />
+  <DefaultModule value="false" />
+  <SingleplayerModule value="true" />
+  <MultiplayerModule value="false" />
+  <Url value="https://www.nexusmods.com/mountandblade2bannerlord/mods/" />
+  <DependedModules>
+    <DependedModule Id="Bannerlord.Harmony" DependentVersion="v2.0.4" />
+    <DependedModule Id="Bannerlord.ButterLib" DependentVersion="v1.0.22" />
+    <DependedModule Id="Bannerlord.UIExtenderEx" DependentVersion="v2.1.5" />
+    <DependedModule Id="Bannerlord.MBOptionScreen" DependentVersion="v4.3.10" />
+    <DependedModule Id="Native" />
+    <DependedModule Id="SandBoxCore" />
+    <DependedModule Id="Sandbox" />
+    <DependedModule Id="StoryMode" />
+  </DependedModules>
+  <DependedModuleMetadatas>
+	<DependedModuleMetadata id="Bannerlord.Harmony" order="LoadBeforeThis" version="v2.0.2" optional="false" />
+	--#else
+	<DependedModuleMetadata id="Bannerlord.Harmony" order="LoadBeforeThis" version="v2.0.2" optional="true" />
+	<DependedModuleMetadata id="Bannerlord.ButterLib" order="LoadBeforeThis" version="v1.0.22" optional="false" />
+	--#else
+	<DependedModuleMetadata id="Bannerlord.ButterLib" order="LoadBeforeThis" version="v1.0.22" optional="true" />
+	<DependedModuleMetadata id="Bannerlord.UIExtenderEx" order="LoadBeforeThis" version="v2.1.5" optional="false" />
+	--#else
+	<DependedModuleMetadata id="Bannerlord.UIExtenderEx" order="LoadBeforeThis" version="v2.1.5" optional="true" />
+	<DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" version="v4.3.10" optional="false" />
+	<DependedModuleMetadata id="Bannerlord.MBOptionScreen.MCMv4" order="LoadBeforeThis" optional="false" />
+	--#else
+	<DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" version="v4.3.10" optional="true" />
+	<DependedModuleMetadata id="Bannerlord.MBOptionScreen.MCMv4" order="LoadBeforeThis" optional="true" />
+	<DependedModuleMetadata id="Native" order="LoadBeforeThis" version="e$gameversion$.*"/>
+	<DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" version="e$gameversion$.*"/>
+	<DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" version="e$gameversion$.*"/>
+	<DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" version="e$gameversion$.*"/>
+  </DependedModuleMetadatas>
+  <SubModules>
+    <SubModule>
+      <Name value="$modulename$" />
+      <DLLName value="$modulename$.dll" />
+      <SubModuleClassType value="$modulename$.SubModule" />
+      <Tags />
+    </SubModule>
+  </SubModules>
+</Module>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+	<Name value="$modulename$" />
+	<Id value="$moduleid$" />
+	<Version value="v$version$" />
+	<Official value="false" />
+	<DefaultModule value="false" />
+	<SingleplayerModule value="true" />
+	<MultiplayerModule value="false" />
+	<Url value="https://www.nexusmods.com/mountandblade2bannerlord/mods/" />
+	<DependedModules>
+		<DependedModule Id="Native" />
+		<DependedModule Id="SandBoxCore" />
+		<DependedModule Id="Sandbox" />
+		<DependedModule Id="StoryMode" />
+		<DependedModule Id="Bannerlord.Harmony" DependentVersion="v2.2.2.140" />
+		<DependedModule Id="Bannerlord.ButterLib" DependentVersion="v2.6.1" />
+		<DependedModule Id="Bannerlord.UIExtenderEx" DependentVersion="v2.1.5" />
+		<DependedModule Id="Bannerlord.MBOptionScreen" DependentVersion="v5.4.5" />
+	</DependedModules>
+	<DependedModuleMetadatas>
+		<DependedModuleMetadata id="Native" order="LoadBeforeThis" version="e$gameversion$.*"/>
+		<DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" version="e$gameversion$.*"/>
+		<DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" version="e$gameversion$.*"/>
+		<DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" version="e$gameversion$.*"/>
+		<DependedModuleMetadata id="Bannerlord.Harmony" order="LoadBeforeThis" version="v2.2.2.140" optional="false" />
+		<DependedModuleMetadata id="Bannerlord.ButterLib" order="LoadBeforeThis" version="v2.6.1" optional="false" />
+		<DependedModuleMetadata id="Bannerlord.UIExtenderEx" order="LoadBeforeThis" version="v2.4.0" optional="false" />
+		<DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" version="v5.4.5" optional="false" />
+	</DependedModuleMetadatas>
+	<SubModules>
+		<SubModule>
+			<Name value="$moduleid$" />
+			<DLLName value="$moduleid$.dll" />
+			<SubModuleClassType value="$moduleid$.SubModule" />
+			<Tags />
+		</SubModule>
+	</SubModules>
+</Module>

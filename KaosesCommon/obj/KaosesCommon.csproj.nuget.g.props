@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\kaoses\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\kaoses\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Language)' == 'C#' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Compile Include="$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\AllowNullAttribute.cs" Condition="Exists('$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\AllowNullAttribute.cs')">
+      <NuGetPackageId>Nullable</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Nullable\AllowNullAttribute.cs</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\DisallowNullAttribute.cs" Condition="Exists('$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\DisallowNullAttribute.cs')">
+      <NuGetPackageId>Nullable</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Nullable\DisallowNullAttribute.cs</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\DoesNotReturnAttribute.cs" Condition="Exists('$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\DoesNotReturnAttribute.cs')">
+      <NuGetPackageId>Nullable</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Nullable\DoesNotReturnAttribute.cs</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\DoesNotReturnIfAttribute.cs" Condition="Exists('$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\DoesNotReturnIfAttribute.cs')">
+      <NuGetPackageId>Nullable</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Nullable\DoesNotReturnIfAttribute.cs</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\MaybeNullAttribute.cs" Condition="Exists('$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\MaybeNullAttribute.cs')">
+      <NuGetPackageId>Nullable</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Nullable\MaybeNullAttribute.cs</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\MaybeNullWhenAttribute.cs" Condition="Exists('$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\MaybeNullWhenAttribute.cs')">
+      <NuGetPackageId>Nullable</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Nullable\MaybeNullWhenAttribute.cs</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\MemberNotNullAttribute.cs" Condition="Exists('$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\MemberNotNullAttribute.cs')">
+      <NuGetPackageId>Nullable</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Nullable\MemberNotNullAttribute.cs</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\MemberNotNullWhenAttribute.cs" Condition="Exists('$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\MemberNotNullWhenAttribute.cs')">
+      <NuGetPackageId>Nullable</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Nullable\MemberNotNullWhenAttribute.cs</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\NotNullAttribute.cs" Condition="Exists('$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\NotNullAttribute.cs')">
+      <NuGetPackageId>Nullable</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Nullable\NotNullAttribute.cs</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\NotNullIfNotNullAttribute.cs" Condition="Exists('$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\NotNullIfNotNullAttribute.cs')">
+      <NuGetPackageId>Nullable</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Nullable\NotNullIfNotNullAttribute.cs</Link>
+    </Compile>
+    <Compile Include="$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\NotNullWhenAttribute.cs" Condition="Exists('$(NuGetPackageRoot)nullable\1.3.1\contentFiles\cs\net40\Nullable\NotNullWhenAttribute.cs')">
+      <NuGetPackageId>Nullable</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Nullable\NotNullWhenAttribute.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Language)' == 'C#' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Compile Include="$(NuGetPackageRoot)isexternalinit\1.0.3\contentFiles\cs\net40\IsExternalInit\IsExternalInit.cs" Condition="Exists('$(NuGetPackageRoot)isexternalinit\1.0.3\contentFiles\cs\net40\IsExternalInit\IsExternalInit.cs')">
+      <NuGetPackageId>IsExternalInit</NuGetPackageId>
+      <NuGetPackageVersion>1.0.3</NuGetPackageVersion>
+      <NuGetItemType>Compile</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>IsExternalInit\IsExternalInit.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)nullable\1.3.1\build\Nullable.props" Condition="Exists('$(NuGetPackageRoot)nullable\1.3.1\build\Nullable.props')" />
+    <Import Project="$(NuGetPackageRoot)isexternalinit\1.0.3\build\IsExternalInit.props" Condition="Exists('$(NuGetPackageRoot)isexternalinit\1.0.3\build\IsExternalInit.props')" />
+    <Import Project="$(NuGetPackageRoot)bannerlord.buildresources\1.0.1.87\build\Bannerlord.BuildResources.props" Condition="Exists('$(NuGetPackageRoot)bannerlord.buildresources\1.0.1.87\build\Bannerlord.BuildResources.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgBannerlord_BuildResources Condition=" '$(PkgBannerlord_BuildResources)' == '' ">C:\Users\kaoses\.nuget\packages\bannerlord.buildresources\1.0.1.87</PkgBannerlord_BuildResources>
+  </PropertyGroup>
+</Project>
