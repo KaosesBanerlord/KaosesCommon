@@ -14,7 +14,7 @@ namespace KaosesCommon.Helpers
         /// </summary>
         /// <param name="hero"></param>
         /// <returns>bool</returns>
-        public static bool isPlayer(Hero hero)
+        public static bool IsPlayer(Hero hero)
         {
             bool isPlayer = false;
 
