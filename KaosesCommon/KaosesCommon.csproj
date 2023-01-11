@@ -10,12 +10,12 @@
 		<BANNERLORD_GAME_DIR>$(GameFolder)</BANNERLORD_GAME_DIR>
 		<BANNERLORD_STABLE_DIR></BANNERLORD_STABLE_DIR>
 		<BANNERLORD_BETA_DIR></BANNERLORD_BETA_DIR>
-		<Version>1.0.3</Version>
+		<Version>1.0.8</Version>
 		<Authors>Patrick Scott</Authors>
-		<RepositoryUrl></RepositoryUrl>
+		<RepositoryUrl>https://github.com/lazeras/KaosesCommon</RepositoryUrl>
 		<RepositoryType>GitHub</RepositoryType>
 		<Copyright>Patrick Scott</Copyright>
-		<PackageProjectUrl></PackageProjectUrl>
+		<PackageProjectUrl>http://bannerlord.kaoses.com/doku.php?id=mods:kaosescommon</PackageProjectUrl>
 		<ApplicationIcon>Kaoses_Bannerlord_logo.ico</ApplicationIcon>
 		<GenerateDocumentationFile>False</GenerateDocumentationFile>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -24,6 +24,8 @@
 		<PackageIcon>K-logo-Small-ManB2-B.png</PackageIcon>
 		<PackageReadmeFile>ReadMe.md</PackageReadmeFile>
 		<NugetsOutput>U:\Nuget.Local</NugetsOutput>
+		<PackageTags>bannerlord;lazereas;kaoses</PackageTags>
+		<PackageReleaseNotes>initial release</PackageReleaseNotes>
 
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

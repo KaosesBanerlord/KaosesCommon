@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Patrick Scott")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Patrick Scott")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Kaoses bannerlord common code ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.8.0")]

@@ -529,7 +529,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.3",
+    "version": "1.0.8",
     "restore": {
       "projectUniqueName": "U:\\BannerLord\\MyMods\\KaosesCommon\\KaosesCommon\\KaosesCommon.csproj",
       "projectName": "KaosesCommon",
