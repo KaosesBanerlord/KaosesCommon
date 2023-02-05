@@ -1,4 +1,4 @@
-# Bannerlord Module Template
+# Kaoses Common
 <p align="center">
    <a href="https://www.nuget.org/packages/Bannerlord.Templates.Kaoses" alt="NuGet Bannerlord.MCM">
    <img src="https://img.shields.io/nuget/v/Bannerlord.Templates.Kaoses.svg?label=NuGet%20Bannerlord.Templates.Kaoses&colorB=blue" /></a>
