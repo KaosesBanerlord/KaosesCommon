@@ -1,8 +1,5 @@
 # Kaoses Common
-<p align="center">
-   <a href="https://www.nuget.org/packages/Bannerlord.Templates.Kaoses" alt="NuGet Bannerlord.MCM">
-   <img src="https://img.shields.io/nuget/v/Bannerlord.Templates.Kaoses.svg?label=NuGet%20Bannerlord.Templates.Kaoses&colorB=blue" /></a>
-</p>
+
 ## Description 
 This mod holds the common code and utilities used by other Kaoses mods. On its own it does nothing to the game, but helps with maintainability and bug fixes for other Kaoses mods
 
