@@ -7,6 +7,7 @@ using TaleWorlds.CampaignSystem;
 
 namespace KaosesCommon.Helpers
 {
+
     public class KHero
     {
         /// <summary>

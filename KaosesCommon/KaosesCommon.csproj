@@ -1,86 +1,112 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
+
 	<PropertyGroup>
+		<Version>1.1.2</Version>
 		<TargetFramework>net472</TargetFramework>
 		<Platforms>x64</Platforms>
-		<LangVersion>9.0</LangVersion>
+		<LangVersion>10.0</LangVersion>
 		<Nullable>enable</Nullable>
 		<ModuleId>KaosesCommon</ModuleId>
 		<ModuleName>Kaoses Common</ModuleName>
-		<GameFolder>E:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord</GameFolder>
-		<BANNERLORD_GAME_DIR>$(GameFolder)</BANNERLORD_GAME_DIR>
-		<BANNERLORD_STABLE_DIR></BANNERLORD_STABLE_DIR>
-		<BANNERLORD_BETA_DIR></BANNERLORD_BETA_DIR>
-		<Version>1.0.8</Version>
-		<Authors>Patrick Scott</Authors>
-		<RepositoryUrl>https://github.com/lazeras/KaosesCommon</RepositoryUrl>
-		<RepositoryType>GitHub</RepositoryType>
-		<Copyright>Patrick Scott</Copyright>
-		<PackageProjectUrl>http://bannerlord.kaoses.com/doku.php?id=mods:kaosescommon</PackageProjectUrl>
-		<ApplicationIcon>Kaoses_Bannerlord_logo.ico</ApplicationIcon>
-		<GenerateDocumentationFile>False</GenerateDocumentationFile>
-		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Title>Kaoses Common</Title>
-		<Description>Kaoses bannerlord common code </Description>
-		<PackageIcon>K-logo-Small-ManB2-B.png</PackageIcon>
-		<PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+		<GameFolder>$(BANNERLORD_GAME_DIR)</GameFolder>
+		<GameVersion>1.0.3</GameVersion>
+		<IsStable>false</IsStable>
+		<IsBeta>false</IsBeta>
+		<!-- The directory .nuget packages are ouputed to if build .nuget package option is selected under build options in visual studio -->
 		<NugetsOutput>U:\Nuget.Local</NugetsOutput>
-		<PackageTags>bannerlord;lazereas;kaoses</PackageTags>
-		<PackageReleaseNotes>initial release</PackageReleaseNotes>
+		<ReferenceAssemblies>true</ReferenceAssemblies>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
 
+	<PropertyGroup>
+		<GameVersion Condition="$(IsStable) == 'false'">1.0.3</GameVersion>
+		<GameVersion Condition="$(IsBeta) == 'false'">1.1.0</GameVersion>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-		<Deterministic>False</Deterministic>
+	<!-- Game Folder(s) -->
+	<PropertyGroup>
+		<!--
+    Bannerlord's Root Folder. Leave empty if you want to try autoresolution. Recommended setup is to set, as an
+    environment variable, BANNERLORD_GAME_DIR in the common case that you have only one game folder. If you have
+    separate game folders for the stable and beta versions of the game, likewise set BANNERLORD_STABLE_DIR and
+    BANNERLORD_BETA_DIR.
+    -->
+		<GameFolder Condition="$(IsStable) == 'true'">$(BANNERLORD_STABLE_DIR)</GameFolder>
+		<GameFolder Condition="$(IsBeta) == 'true'">$(BANNERLORD_BETA_DIR)</GameFolder>
+		<GameFolder Condition="$(GameFolder) == ''">$(BANNERLORD_GAME_DIR)</GameFolder>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<ApplicationIcon>Kaoses_Bannerlord_logo.ico</ApplicationIcon>
+		<Authors>Lazeras (Patrick Scott)</Authors>
+		<Copyright>MIT</Copyright>
+		<PackageProjectUrl>https://kaosesdev.com/banerlord-mods/kaoses-common/</PackageProjectUrl>
+		<PackageIcon>K-logo-bannerlord_collection.jpg</PackageIcon>
+		<RepositoryUrl>https://github.com/KaosesBanerlord/KaosesCommon</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>banerlord, kaoses, lazeras</PackageTags>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-		<Deterministic>False</Deterministic>
-	</PropertyGroup>
+
+	<ItemGroup Condition="'$(ReferenceAssemblies)' == 'true'">
+		<Reference Include="$(GameFolder)\bin\Win64_Shipping_Client\Newtonsoft.Json.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.*.dll" Exclude="$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.Native.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="$(GameFolder)\Modules\Native\bin\Win64_Shipping_Client\*.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="$(GameFolder)\Modules\SandBox\bin\Win64_Shipping_Client\*.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="$(GameFolder)\Modules\SandBoxCore\bin\Win64_Shipping_Client\*.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="$(GameFolder)\Modules\StoryMode\bin\Win64_Shipping_Client\*.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="$(GameFolder)\Modules\CustomBattle\bin\Win64_Shipping_Client\*.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="$(GameFolder)\Modules\BirthAndDeath\bin\Win64_Shipping_Client\*.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
 
 	<ItemGroup>
 		<Content Include="Kaoses_Bannerlord_logo.ico" />
 	</ItemGroup>
-	<ItemGroup>
-		<None Include="..\..\..\MediFiles\K-logo-Small-ManB2-B.png">
-			<Pack>True</Pack>
-			<PackagePath>\</PackagePath>
-		</None>
-	</ItemGroup>
-
 
 	<ItemGroup>
 		<Reference Include="System.Windows.Forms" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Bannerlord.BuildResources" Version="1.0.1.87">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="Bannerlord.ReferenceAssemblies.BirthAndDeath" Version="1.0.3.9055" />
-		<PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="1.0.3.9055" />
-		<PackageReference Include="Bannerlord.ReferenceAssemblies.Native" Version="1.0.3.9055" />
-		<PackageReference Include="Bannerlord.ReferenceAssemblies.SandBox" Version="1.0.3.9055" />
-		<PackageReference Include="Bannerlord.ReferenceAssemblies.StoryMode" Version="1.0.3.9055" />
-		<PackageReference Include="Nullable" Version="1.3.1">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="IsExternalInit" Version="1.0.3">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="Newtonsoft.Json" Version="13.0.2">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>compile</IncludeAssets>
-		</PackageReference>
+		<PackageReference Include="Nullable" Version="1.3.1" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+		<PackageReference Include="IsExternalInit" Version="1.0.3" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+		<PackageReference Include="Bannerlord.BuildResources" Version="1.0.1.85" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+		<PackageReference Include="Lib.Harmony" Version="2.2.2" IncludeAssets="compile" />
+		<PackageReference Include="Harmony.Extensions" Version="3.1.0.67" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+		<PackageReference Include="BUTR.Harmony.Analyzer" Version="1.0.1.44" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+		<PackageReference Include="Newtonsoft.Json" Version="11.0.2" PrivateAssets="all" IncludeAssets="compile" />
+
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Update="ReadMe.md">
+		<None Include="..\..\..\MediFiles\K-logo-bannerlord_collection.jpg">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
+	<!-- Copies built .nuget packages to the NugetsOutput directory -->
 	<Target Name="CopyPackage" AfterTargets="Pack">
 		<Copy SourceFiles="$(ProjectDir)\bin\x64\Debug\$(PackageId).$(PackageVersion).nupkg" DestinationFolder="$(NugetsOutput)\$(PackageId).$(PackageVersion).nupkg" />
 	</Target>

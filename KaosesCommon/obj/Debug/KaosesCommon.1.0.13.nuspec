@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>KaosesCommon</id>
+    <version>1.0.13</version>
+    <authors>KaosesCommon</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Lib.Harmony" version="2.2.2" exclude="Runtime,Build,Native,Analyzers,BuildTransitive" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework=".NETFramework4.7.2" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="U:\BannerLord\MyMods\KaosesCommon\KaosesCommon\bin\x64\Debug\net472\KaosesCommon.dll" target="lib\net472\KaosesCommon.dll" />
+  </files>
+</package>

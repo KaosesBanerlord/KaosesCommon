@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Settlements;
+using TaleWorlds.CampaignSystem;
 
 namespace KaosesCommon.Helpers
 {
+
     /// <summary>
     /// Kaoses helper methods for working with factions
     /// </summary>
@@ -17,20 +18,20 @@ namespace KaosesCommon.Helpers
 
         // Token: 0x06003079 RID: 12409 RVA: 0x000D1266 File Offset: 0x000CF466
         /// <summary>
-        /// Check if Faction is looter faction
+        /// Check if Faction is looter faction by checking if they can have settlements
         /// </summary>
-        /// <param name="faction">IFaction faction</param>
+        /// <param name="faction"><see cref="IFaction"/> Taleworlds Faction object</param>
         /// <returns>bool</returns>
         public static bool IsLooterFaction(IFaction faction)
         {
-           return !faction.Culture.CanHaveSettlement;
+            return !faction.Culture.CanHaveSettlement;
         }
 
         /// <summary>
         /// Helper method to check if party or party leader is part of the player clan
         /// </summary>
-        /// <param name="party">PartyBase part</param>
-        /// <returns>bool</returns>
+        /// <param name="party"><see cref="PartyBase"/> object </param>
+        /// <returns><see cref="bool"/> true is is player or part of players clan, else is false</returns>
         public static bool IsPlayerClan(PartyBase party)
         {
             bool isSame = false;
@@ -50,7 +51,7 @@ namespace KaosesCommon.Helpers
         /// <summary>
         /// Helper method to check if hero is part of the player clan
         /// </summary>
-        /// <param name="hero">Hero hero</param>
+        /// <param name="hero"><see cref="Hero"/> character object </param>
         /// <returns>bool</returns>
         public static bool IsPlayerClan(Hero hero)
         {
@@ -70,7 +71,7 @@ namespace KaosesCommon.Helpers
         /// <summary>
         /// Helper method to check if the party or party leader is part of the player clan
         /// </summary>
-        /// <param name="mobileParty">MobileParty mobileParty</param>
+        /// <param name="mobileParty"><see cref="MobileParty"/> mobileParty</param>
         /// <returns>bool</returns>
         public static bool IsPlayerClan(MobileParty mobileParty)
         {

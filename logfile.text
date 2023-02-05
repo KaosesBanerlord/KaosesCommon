@@ -1,0 +1,134 @@
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesPartySizes
+modulePath: ..\\..\\Modules\\KaosesPartySizes\
+_logFile: ..\\..\\Modules\\KaosesPartySizes\log.txt
+_exceptionLogFile: ..\\..\\Modules\\KaosesPartySizes\exceptions.txt
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesTweaksBannerKings
+modulePath: ..\\..\\Modules\\KaosesTweaksBannerKings\
+_logFile: ..\\..\\Modules\\KaosesTweaksBannerKings\log.txt
+_exceptionLogFile: ..\\..\\Modules\\KaosesTweaksBannerKings\exceptions.txt
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesTweaksBannerKings
+modulePath: ..\\..\\Modules\\KaosesTweaksBannerKings\
+_logFile: ..\\..\\Modules\\KaosesTweaksBannerKings\log.txt
+_exceptionLogFile: ..\\..\\Modules\\KaosesTweaksBannerKings\exceptions.txt
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: Temp
+modulePath: ..\\..\\Modules\\Temp\
+_logFile: ..\\..\\Modules\\Temp\log.txt
+_exceptionLogFile: ..\\..\\Modules\\Temp\exceptions.txt
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesTweaksBannerKings
+modulePath: ..\\..\\Modules\\KaosesTweaksBannerKings\
+_logFile: ..\\..\\Modules\\KaosesTweaksBannerKings\log.txt
+_exceptionLogFile: ..\\..\\Modules\\KaosesTweaksBannerKings\exceptions.txt
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesTweaksBannerKings
+modulePath: ..\\..\\Modules\\KaosesTweaksBannerKings\
+_logFile: ..\\..\\Modules\\KaosesTweaksBannerKings\log.txt
+_exceptionLogFile: ..\\..\\Modules\\KaosesTweaksBannerKings\exceptions.txt
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesTweaksBannerKings
+modulePath: ..\\..\\Modules\\KaosesTweaksBannerKings\
+_logFile: ..\\..\\Modules\\KaosesTweaksBannerKings\log.txt
+_exceptionLogFile: ..\\..\\Modules\\KaosesTweaksBannerKings\exceptions.txt
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesTweaksBannerKings
+modulePath: ..\\..\\Modules\\KaosesTweaksBannerKings\
+_logFile: ..\\..\\Modules\\KaosesTweaksBannerKings\log.txt
+_exceptionLogFile: ..\\..\\Modules\\KaosesTweaksBannerKings\exceptions.txt
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesTweaksBannerKings
+modulePath: ..\\..\\Modules\\KaosesTweaksBannerKings\
+_logFile: ..\\..\\Modules\\KaosesTweaksBannerKings\log.txt
+_exceptionLogFile: ..\\..\\Modules\\KaosesTweaksBannerKings\exceptions.txt
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesTweaksBannerKings
+modulePath: ..\\..\\Modules\\KaosesTweaksBannerKings\
+_logFile: ..\\..\\Modules\\KaosesTweaksBannerKings\log.txt
+_exceptionLogFile: ..\\..\\Modules\\KaosesTweaksBannerKings\exceptions.txt
+Module Folder not set correctly..\\..\\Modules\\KaosesTemp\
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesTemp
+modulePath: ..\\..\\Modules\\KaosesTemp\
+_logFile: 
+_exceptionLogFile: 
+Module Folder not set correctly..\\..\\Modules\\KaosesTemp\
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesTemp
+modulePath: ..\\..\\Modules\\KaosesTemp\
+_logFile: 
+_exceptionLogFile: 
+Module Folder not set correctly..\\..\\Modules\\KaosesTemp\
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesTemp
+modulePath: ..\\..\\Modules\\KaosesTemp\
+_logFile: 
+_exceptionLogFile: 
+Module Folder not set correctly..\\..\\Modules\\KaosesTemp\
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesTemp
+modulePath: ..\\..\\Modules\\KaosesTemp\
+_logFile: 
+_exceptionLogFile: 
+Module Folder not set correctly..\\..\\Modules\\KaosesTemp\
+InfoMgr Constructor:
+logToFile: True
+isDebug: True
+ModId: KaosesTemp
+modulePath: ..\\..\\Modules\\KaosesTemp\
+_logFile: 
+_exceptionLogFile: 
+Module Folder not set correctly..\\..\\Modules\\KaosesTemp\
+InfoMgr Constructor:
+logToFile: False
+isDebug: False
+ModId: KaosesTemp
+modulePath: ..\\..\\Modules\\KaosesTemp\
+_logFile: 
+_exceptionLogFile: 
+Module Folder not set correctly..\\..\\Modules\\KaosesTemp\
+InfoMgr Constructor:
+logToFile: False
+isDebug: False
+ModId: KaosesTemp
+modulePath: ..\\..\\Modules\\KaosesTemp\
+_logFile: 
+_exceptionLogFile: 
+Module Folder not set correctly..\\..\\Modules\\KaosesTemp\
+InfoMgr Constructor:
+logToFile: False
+isDebug: False
+ModId: KaosesTemp
+modulePath: ..\\..\\Modules\\KaosesTemp\
+_logFile: 
+_exceptionLogFile: 

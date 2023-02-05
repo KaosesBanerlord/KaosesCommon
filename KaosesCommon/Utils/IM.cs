@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
@@ -12,6 +15,7 @@ using TaleWorlds.Library;
  */
 namespace KaosesCommon.Utils
 {
+
     /// <summary>
     /// Kaoses Message Class to handle the showing of messages and message boxes
     /// </summary>
@@ -39,6 +43,7 @@ namespace KaosesCommon.Utils
     /// IM.ShowError(Exception ex);
     /// </code>
     /// </example>
+    [Obsolete("Use KaosesCommon.Objects.InfoMgr")]
     public class IM
     {
         /// <summary>
@@ -82,11 +87,11 @@ namespace KaosesCommon.Utils
         /// </summary>
         public static void MessageModInfo()
         {
-            IM.MessageYellow("Mod Id: " + Logger.ModuleId);
+            //IM2.MessageYellow("Mod Id: " + Logger.ModuleId);
             //IM.MessageYellow("Prepend: " + IM.PrePrend);
             IM.MessageYellow("Mod Version: " + ModVersion);
             IM.MessageYellow("Game Version: " + EngineController.GetVersionStr());
-            Logger.ModInfoDebug();
+            //Logger.ModInfoDebug();
         }
 
         /// <summary>
@@ -204,7 +209,7 @@ namespace KaosesCommon.Utils
             {
                 message += "\n\nGameVersion: " + EngineController.GetVersionStr() + "\nModVersion: " + ModVersion;
             }
-            Logger.LmException(message);
+            //Logger.LmException(message);
             //logMessage(title + "\n" + message);
             ShowMessageBox(message, title);
         }
@@ -224,16 +229,18 @@ namespace KaosesCommon.Utils
             {
                 fullMessage = IM.PrePrend + " : " + message;
             }
-            
+
             try
             {
-                
+
                 if (logToFile)
                 {
-                logMessage(fullMessage);
+                    logMessage(fullMessage);
                 }
                 InformationManager.DisplayMessage(new InformationMessage(fullMessage, messageColor));
-            } catch (Exception ex){
+            }
+            catch (Exception ex)
+            {
                 logMessage("messageStrLength: " + fullMessage.Length);
                 logMessage("messageStr: " + fullMessage);
                 logMessage(IM.GetString(ex));
@@ -247,7 +254,7 @@ namespace KaosesCommon.Utils
         /// <param name="message">string, messagre to log to file</param>
         private static void logMessage(string message)
         {
-            Logger.Lm(message);
+            //Logger.Lm(message);
         }
 
         /// <summary>

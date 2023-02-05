@@ -1,13 +1,15 @@
-﻿using Helpers;
-using KaosesCommon.Utils;
-using System;
-using TaleWorlds.CampaignSystem;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using TaleWorlds.CampaignSystem.Party;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
-
 
 namespace KaosesCommon.Objects
 {
+
     /// <summary>
     /// Struct to hold information for filling party stacks
     /// </summary>

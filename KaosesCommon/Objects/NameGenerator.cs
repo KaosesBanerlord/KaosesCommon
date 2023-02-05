@@ -19,6 +19,7 @@ using TaleWorlds.Core;
 namespace KaosesCommon.Objects
 {
 
+
     /// <summary>
     /// Additional Bandit Name Info generator
     /// </summary>
@@ -1588,12 +1589,12 @@ namespace KaosesCommon.Objects
         };
 
 
-       /// <summary>
-       /// Generates a character name based on sex and clan culture
-       /// </summary>
-       /// <param name="clan"></param>
-       /// <param name="IsFemale"></param>
-       /// <returns></returns>
+        /// <summary>
+        /// Generates a character name based on sex and clan culture
+        /// </summary>
+        /// <param name="clan"></param>
+        /// <param name="IsFemale"></param>
+        /// <returns></returns>
         public static string GetCharacterName(Clan clan, bool IsFemale = false)
         {
             string kingdomName = GetKingdomFromBanditClan(clan);

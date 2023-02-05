@@ -5,7 +5,7 @@
   },
   "projects": {
     "U:\\BannerLord\\MyMods\\KaosesCommon\\KaosesCommon\\KaosesCommon.csproj": {
-      "version": "1.0.8",
+      "version": "1.1.2",
       "restore": {
         "projectUniqueName": "U:\\BannerLord\\MyMods\\KaosesCommon\\KaosesCommon\\KaosesCommon.csproj",
         "projectName": "KaosesCommon",
@@ -44,31 +44,23 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "BUTR.Harmony.Analyzer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.1.44, )"
+            },
             "Bannerlord.BuildResources": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[1.0.1.87, )"
+              "version": "[1.0.1.85, )"
             },
-            "Bannerlord.ReferenceAssemblies.BirthAndDeath": {
+            "Harmony.Extensions": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[1.0.3.9055, )"
-            },
-            "Bannerlord.ReferenceAssemblies.Core": {
-              "target": "Package",
-              "version": "[1.0.3.9055, )"
-            },
-            "Bannerlord.ReferenceAssemblies.Native": {
-              "target": "Package",
-              "version": "[1.0.3.9055, )"
-            },
-            "Bannerlord.ReferenceAssemblies.SandBox": {
-              "target": "Package",
-              "version": "[1.0.3.9055, )"
-            },
-            "Bannerlord.ReferenceAssemblies.StoryMode": {
-              "target": "Package",
-              "version": "[1.0.3.9055, )"
+              "version": "[3.1.0.67, )"
             },
             "IsExternalInit": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -76,11 +68,16 @@
               "target": "Package",
               "version": "[1.0.3, )"
             },
+            "Lib.Harmony": {
+              "include": "Compile",
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Newtonsoft.Json": {
               "include": "Compile",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[13.0.2, )"
+              "version": "[11.0.2, )"
             },
             "Nullable": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

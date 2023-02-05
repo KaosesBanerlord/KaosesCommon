@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
 	<tags>
@@ -6,5 +6,11 @@
 	</tags>
 	<strings>
     <string id="KaosesCommonDisplayName" text="Kaoses Common" />
+		<string id="debug" text="Debug" />
+		<string id="debug_desc" text="Displays mod developer debug information and logs them to the file" />
+		<string id="debuglog" text="Log to file" />
+		<string id="debuglog_desc" text="Log information messages to the log file as well as errors and debug" />
+		<string id="debugharmony" text="Debug Harmony" />
+		<string id="debugharmony_desc" text="Enable/Disable harmony's debuging logs" />
   </strings>
 </base>

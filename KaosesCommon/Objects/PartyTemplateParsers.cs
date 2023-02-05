@@ -1,11 +1,14 @@
 ﻿using KaosesCommon.Helpers;
-using KaosesCommon.Utils;
+using System;
 using System.Collections.Generic;
-using TaleWorlds.CampaignSystem;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using TaleWorlds.CampaignSystem.Party;
 
 namespace KaosesCommon.Objects
 {
+
     /// <summary>
     /// Kaoses PartyTemplateObject Parser
     /// </summary>

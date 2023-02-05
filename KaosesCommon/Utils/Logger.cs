@@ -1,9 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using TaleWorlds.Engine;
 
 namespace KaosesCommon.Utils
 {
+
     /// <summary>
     /// Kaoses Logger class to handle the logging of info to file
     /// 
@@ -28,6 +33,7 @@ namespace KaosesCommon.Utils
     /// </code>
     /// </example>
     /// </summary>
+    [Obsolete("Use KaosesCommon.Objects.InfoMgr")]
     public class Logger
     {
         /// <summary>
@@ -167,7 +173,7 @@ namespace KaosesCommon.Utils
         /// <param name="message"></param>
         private static void WriteLogFile(string logFile, string message)
         {
-            
+
             try
             {
                 using StreamWriter sw = File.AppendText(logFile);
@@ -192,7 +198,7 @@ namespace KaosesCommon.Utils
         /// </summary>
         /// <param name="logFile"></param>
         /// <param name="message"></param>
-        private static void WriteLogFile2(string logFile, string message)
+        private static void WriteLogFile2(string message)
         {
             try
             {
@@ -256,7 +262,8 @@ namespace KaosesCommon.Utils
         /// </summary>
         private static void ShowModuleFolderErrorBox()
         {
-            IM.ShowMessageBox("Module Folder not set correctly", "LogFilePathTemplate cant be found" + _modulepath);
+            //WriteLogFile2("Module Folder not set correctly" + _modulepath);
+            //IM.ShowMessageBox("Module Folder not set correctly" + _modulepath, "LogFilePathTemplate cant be found");
         }
 
     }

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>KaosesCommon</id>
+    <version>1.1.2</version>
+    <authors>Lazeras (Patrick Scott)</authors>
+    <icon>K-logo-bannerlord_collection.jpg</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://kaosesdev.com/banerlord-mods/kaoses-common/</projectUrl>
+    <description>Package Description</description>
+    <copyright>MIT</copyright>
+    <tags>banerlord, kaoses, lazeras</tags>
+    <repository type="git" url="https://github.com/KaosesBanerlord/KaosesCommon" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Lib.Harmony" version="2.2.2" exclude="Runtime,Build,Native,Analyzers,BuildTransitive" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework=".NETFramework4.7.2" />
+    </frameworkAssemblies>
+    <contentFiles>
+      <files include="any/net472/Kaoses_Bannerlord_logo.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="U:\BannerLord\MyMods\KaosesCommon\KaosesCommon\bin\x64\Release\net472\KaosesCommon.dll" target="lib\net472\KaosesCommon.dll" />
+    <file src="U:\BannerLord\MyMods\KaosesCommon\KaosesCommon\Kaoses_Bannerlord_logo.ico" target="content\Kaoses_Bannerlord_logo.ico" />
+    <file src="U:\BannerLord\MyMods\KaosesCommon\KaosesCommon\Kaoses_Bannerlord_logo.ico" target="contentFiles\any\net472\Kaoses_Bannerlord_logo.ico" />
+    <file src="U:\BannerLord\MediFiles\K-logo-bannerlord_collection.jpg" target="\K-logo-bannerlord_collection.jpg" />
+    <file src="U:\BannerLord\MyMods\KaosesCommon\README.md" target="\README.md" />
+  </files>
+</package>

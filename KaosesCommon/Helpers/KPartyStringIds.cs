@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace KaosesCommon.Helpers
 {
+
     /// <summary>
     /// Contains the static methods and list for working with partyTemplateId's
     /// </summary>
